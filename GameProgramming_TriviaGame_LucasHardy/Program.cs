@@ -28,7 +28,9 @@ namespace GameProgramming_TriviaGame_LucasHardy
             while(gameRunning)
             {
                 playAgainPicked = false;
+                Console.ForegroundColor = ConsoleColor.Green;
                 DisplayMainMenuScreen();
+                Console.ResetColor();
 
                 for(int j = 0; j < Questions.Length; j++)
                 {
